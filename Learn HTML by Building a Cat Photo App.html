@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"> <!--You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers:-->
+    <head>
+        <meta charset="UTF-8"> <!--The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+
+            <meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+            
+            Metadata will not be displayed on the page, but is machine parsable.
+            
+            Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+            
+            There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).-->
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <main> <!--The <main> tag specifies the main content of a document.
+
+            The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+            
+            Note: There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.-->
+          <h1>CatPhotoApp</h1>
+          <section>
+            <h2>Cat Photos</h2>
+            <!-- TODO: Add link to cat photos -->
+            <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
+            <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+          </section>
+          <section> <!--The <section> tag defines a section in a document.-->
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul> <!--The <ul> tag defines an unordered (bulleted) list.
+
+                Use the <ul> tag together with the <li> tag to create unordered lists.-->
+              <li>cat nip</li>
+              <li>laser pointers</li>
+              <li>lasagna</li>
+            </ul>
+            <figure> <!--The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code      listings, etc.
+
+                While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+                
+                Tip: The <figcaption> element is used to add a caption for the <figure> element.-->
+              <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+              <figcaption>Cats <em>love</em> lasagna.</figcaption> <!--The <figcaption> tag defines a caption for a <figure> element.
+
+                The <figcaption> element can be placed as the first or last child of the <figure> element.-->  
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+              <li>flea treatment</li>
+              <li>thunder</li>
+              <li>other cats</li>
+            </ol>
+            <figure>
+              <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+              <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+            </figure>
+          </section>
+          <section>
+            <h2>Cat Form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+              <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+              </fieldset>
+              <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+                <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+              </fieldset>
+              <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+        </main>
+        <footer>
+          <p>
+            No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+          </p>
+        </footer>
+</body>
+</html>
